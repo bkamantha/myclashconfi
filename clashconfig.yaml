@@ -78,7 +78,7 @@ proxies:
       server: au.vmess1.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid:  d1d5744a-d7e6-4d14-adc4-38b29d3d8e4a,
+      uuid:  2d2cd344-b59e-44c3-920b-65a9403651df,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
