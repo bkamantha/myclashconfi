@@ -60,7 +60,7 @@ proxies:
       server: jp.vmess1.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid:  d1d5744a-d7e6-4d14-adc4-38b29d3d8e4a,
+      uuid:  13be01c4-e8b3-4205-a1f8-0a443a86c852,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
