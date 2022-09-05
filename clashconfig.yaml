@@ -111,7 +111,7 @@ proxies:
       name: Netherland01,
       server: nl.vless1.xservs.xyz,
       port: 8080,
-      type: vmess,
+      type: vless,
       uuid:  c3fbab3e-58f7-4a23-994a-fe5a96482fcf,
       sni: zoom.us,
       alterId: 0,
