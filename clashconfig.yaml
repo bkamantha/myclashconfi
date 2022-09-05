@@ -134,7 +134,7 @@ proxy-groups:
       - Japan01
       - Sydney01
       - Singapore08
-      - UnitedStates03
+      - Netherland01
 
 rules:
   - MATCH,personal-clash
