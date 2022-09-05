@@ -109,18 +109,18 @@ proxies:
   - {
     # https://sshstores.net/v2ray-region/vmess/usa/usvm7-3
       name: Netherland01,
-      server: nl.vless1.xservs.xyz,
-      port: 8080,
+      server: nl.vmess1.xservs.xyz,
+      port: 443,
       type: vless,
-      uuid:  c3fbab3e-58f7-4a23-994a-fe5a96482fcf,
+      uuid:  1139735a-7f14-4841-a880-75a15fe2510b,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
-      tls: 8443,
+      tls: 443,
       skip-cert-verify: true,
       udp: true,
       network: ws,
-      ws-opts: { path: /vless, headers: { Host: zoom.us } },
+      ws-opts: { path: /vmess, headers: { Host: zoom.us } },
     }
   
 proxy-groups:
