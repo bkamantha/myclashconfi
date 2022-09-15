@@ -73,12 +73,12 @@ proxies:
 
 
   - {
-    # https://sshstores.net/v2ray-region/vmess/sydney/auvm7-1
-      name: Sydney01,
-      server: au.vmess1.xservs.xyz,
+    # https://sshstores.net/v2ray-region/vmess/netherland/nlvm7-1
+      name: Neatherland01,
+      server: nl.vmess1.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid:  30a7aa53-012d-410e-89d0-db0901e36376,
+      uuid:  8e33a578-7cf9-4840-8f16-34dbf9db156f,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
@@ -95,7 +95,7 @@ proxies:
       server: sg.vmess8.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid:   99fc1885-2162-4143-99fe-dc4bd220b1e3,
+      uuid:   8a7157a2-f274-4959-92c2-f8800cde0c75,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
@@ -132,7 +132,7 @@ proxy-groups:
     proxies:
       - London02
       - Japan01
-      - Sydney01
+      - Neatherland01
       - Singapore08
       - USA03
 
