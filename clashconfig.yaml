@@ -42,7 +42,7 @@ proxies:
       server: ln.vmess2.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid: 8a37f15b-c938-4ede-9fad-1c87399fc8ae,
+      uuid: ba3fd4db-236f-4bb8-bf77-e2ffad392302,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
@@ -55,12 +55,12 @@ proxies:
 
     
   - {
-    # https://sshstores.net/v2ray-region/vmess/japan/jpvm7-1
+    # https://sshstores.net/v2ray-region/vmess/netherland/nlvm7-2
       name: Neatherland02,
       server: nl.vmess2.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid:  5b45ea61-ada6-4b2c-8f1e-3bc94b7f3f54,
+      uuid:  6f8d3f00-5d85-4608-894d-aa5ad05b692c,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
