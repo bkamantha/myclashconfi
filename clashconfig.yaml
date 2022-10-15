@@ -37,12 +37,12 @@ experimental:
 
 proxies:
   - {
-    # https://sshstores.net/v2ray-region/vmess/london/lnvm7-2
+      # https://sshstores.net/v2ray-region/vmess/london/lnvm7-2
       name: London02,
       server: ln.vmess2.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid: ba3fd4db-236f-4bb8-bf77-e2ffad392302,
+      uuid: c7db9cd2-0bc8-41b3-93b9-f3de02a6b4a8,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
@@ -53,14 +53,13 @@ proxies:
       ws-opts: { path: /vmess, headers: { Host: zoom.us } },
     }
 
-    
   - {
-    # https://sshstores.net/v2ray-region/vmess/netherland/nlvm7-2
+      # https://sshstores.net/v2ray-region/vmess/netherland/nlvm7-2
       name: Neatherland02,
       server: nl.vmess2.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid:  59e50f44-ae9c-4ebc-ac79-4c5589f71d50,
+      uuid: 59e50f44-ae9c-4ebc-ac79-4c5589f71d50,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
@@ -71,14 +70,13 @@ proxies:
       ws-opts: { path: /vmess, headers: { Host: zoom.us } },
     }
 
-
   - {
-    # https://sshstores.net/v2ray-region/vmess/netherland/nlvm7-1
+      # https://sshstores.net/v2ray-region/vmess/netherland/nlvm7-1
       name: Neatherland01,
       server: nl.vmess1.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid:   8ef29980-4225-4585-9bbf-1e2f4fc32c96,
+      uuid: 8ef29980-4225-4585-9bbf-1e2f4fc32c96,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
@@ -90,12 +88,12 @@ proxies:
     }
 
   - {
-    # https://sshstores.net/v2ray-region/vmess/singapore/sgvm7-8
+      # https://sshstores.net/v2ray-region/vmess/singapore/sgvm7-8
       name: Singapore08,
       server: sg.vmess8.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid:   fdf621e9-629d-4dc6-90ee-2bff4edd718c,
+      uuid: fdf621e9-629d-4dc6-90ee-2bff4edd718c,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
@@ -107,12 +105,12 @@ proxies:
     }
 
   - {
-    # https://sshstores.net/v2ray-region/vmess/usa/usvm7-3
+      # https://sshstores.net/v2ray-region/vmess/usa/usvm7-3
       name: USA03,
       server: us.vmess3.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid:  613f28bd-b44e-49fb-aba6-5af2f054486b,
+      uuid: d884ae62-4cfa-4e85-820f-fd5b7ed3c657,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
@@ -122,7 +120,7 @@ proxies:
       network: ws,
       ws-opts: { path: /vmess, headers: { Host: zoom.us } },
     }
-  
+
 proxy-groups:
   - name: personal-clash
     type: load-balance
