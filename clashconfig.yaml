@@ -42,7 +42,7 @@ proxies:
       server: ln.vmess2.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid: d72b0315-ac1a-462c-8cd9-e8a7289caa9b,
+      uuid: e1bbcb3d-d457-4cae-87d3-001da7b09207,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
@@ -76,7 +76,7 @@ proxies:
       server: nl.vmess1.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid: 266e451c-44f0-4cbb-93f5-ac9dc07bb822,
+      uuid: d627e2fd-f1fb-4aa6-b982-0882b66786bb,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
@@ -88,12 +88,12 @@ proxies:
     }
 
   - {
-      # https://sshstores.net/v2ray-region/vmess/singapore/sgvm7-8
+      # https://sshstores.net/v2ray-region/vmess/singapore/sgvm7-5
       name: Singapore08,
-      server: sg.vmess8.xservs.xyz,
+      server: sg.vmess5.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid: e45f5585-4373-4255-ae18-75ca3fc3c58c,
+      uuid: d48a6cb6-c040-4d13-be57-109174aa3032,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
