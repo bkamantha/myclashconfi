@@ -88,12 +88,12 @@ proxies:
     }
 
   - {
-      # https://sshstores.net/v2ray-region/vmess/singapore/sgvm7-5
+      # https://sshstores.net/v2ray-region/vmess/singapore/sgvm7-8
       name: Singapore08,
-      server: sg.vmess5.xservs.xyz,
+      server: sg.vmess8.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid: d48a6cb6-c040-4d13-be57-109174aa3032,
+      uuid: e45f5585-4373-4255-ae18-75ca3fc3c58c,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
