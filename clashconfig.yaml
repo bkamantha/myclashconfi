@@ -38,11 +38,11 @@ experimental:
 proxies:
   - {
       # https://sshstores.net/v2ray-region/vmess/london/lnvm7-2
-      name: London02,
-      server: ln.vmess2.xservs.xyz,
+      name: London01,
+      server: ln.vmess1.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid: e1bbcb3d-d457-4cae-87d3-001da7b09207,
+      uuid: d0d5d394-6183-4f0e-8804-2945cadcd7e5,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
@@ -128,7 +128,7 @@ proxy-groups:
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     proxies:
-      - London02
+      - London01
       - Japan01
       - Neatherland01
       - Singapore08
