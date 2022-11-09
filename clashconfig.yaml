@@ -56,10 +56,10 @@ proxies:
   - {
       # https://sshstores.net/v2ray-region/vmess/netherland/nlvm7-2
       name: Japan01,
-      server: jp.vmess2.xservs.xyz,
+      server: jp.vmess1.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid: e02aae76-92e0-4b2f-8350-9c5e02e559b7,
+      uuid: da69069e-2b85-4bbc-8018-909eac910afe,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
@@ -93,7 +93,7 @@ proxies:
       server: sg.vmess5.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid: d48a6cb6-c040-4d13-be57-109174aa3032,
+      uuid: 511976a6-0bdc-4b2a-b3d2-bf5a560f2401,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
@@ -107,7 +107,7 @@ proxies:
   - {
       # https://sshstores.net/v2ray-region/vmess/usa/usvm7-3
       name: USA03,
-      server: us.vmess3.xservs.xyz,
+      server: sg.vmess4.xservs.xyz,
       port: 443,
       type: vmess,
       uuid: d884ae62-4cfa-4e85-820f-fd5b7ed3c657,
