@@ -93,7 +93,7 @@ proxies:
       server: sg.vmess5.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid: 77a5be21-45be-4bb2-b64d-1930931594f8,
+      uuid: 5c3c9bd6-cbac-4211-9f8f-f05b8d432066,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
