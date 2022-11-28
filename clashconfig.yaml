@@ -54,12 +54,12 @@ proxies:
     }
 
   - {
-      # https://sshstores.net/v2ray-region/vmess/netherland/nlvm7-2
+      #https://sshstores.net/v2ray-region/vmess/japan/jpvm7-1
       name: Japan01,
       server: jp.vmess1.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid: da69069e-2b85-4bbc-8018-909eac910afe,
+      uuid: d56f04d5-6710-4e27-abc3-22c46110c935,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
@@ -93,7 +93,7 @@ proxies:
       server: sg.vmess5.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid: 5c3c9bd6-cbac-4211-9f8f-f05b8d432066,
+      uuid: 4d8d6eab-a799-45b6-af0b-71b4ed066e92,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
@@ -110,7 +110,7 @@ proxies:
       server: sg.vmess4.xservs.xyz,
       port: 443,
       type: vmess,
-      uuid: d884ae62-4cfa-4e85-820f-fd5b7ed3c657,
+      uuid: 5e5221c4-9253-49ed-ad79-a0809838f8d0,
       sni: zoom.us,
       alterId: 0,
       cipher: auto,
@@ -126,7 +126,7 @@ proxy-groups:
     type: load-balance
     strategy: consistent-hashing
     url: "http://www.gstatic.com/generate_204"
-    interval: 300
+    interval: 5000
     proxies:
       - London01
       - Japan01
