@@ -17,21 +17,24 @@ dns:
     geoip: false
     ipcidr:
       - 240.0.0.0/4
+
   nameserver:
-    - https://puredns.org/dns-query
-    - tls://puredns.org:853
+    - https://42a755ec.d.adguard-dns.com/dns-query
+    - tls://42a755ec.d.adguard-dns.com
+    - quic://42a755ec.d.adguard-dns.com
+
   fallback:
-    - tcp://108.137.44.39
-    - tcp://108.137.44.9
-    - 108.137.44.39
-    - 108.137.44.9
+    - tcp://94.140.14.59
+    - tcp://94.140.14.49
+    - 94.140.14.49
+    - 94.140.14.59
 tun:
   enable: true
   stack: system
   macOS-auto-route: true
   macOS-auto-detect-interface: true
   dns-hijack:
-    - tcp://108.137.44.39:53
+    - tcp://94.140.14.49:53
 experimental:
   interface-name: en0
 
@@ -68,6 +71,17 @@ proxies:
     }
 
   - {
+      name: sshocean-sg,
+      server: sgt3.sshocean.net,
+      port: 443,
+      udp: true,
+      type: trojan,
+      password: 2966331c-c25b-4d0f-8c2d-db21a24be8bd,
+      sni: zoom.us,
+      skip-cert-verify: true,
+    }
+
+  - {
       name: fastssh-sg,
       server: sghe.tjvpn.org,
       port: 443,
@@ -86,8 +100,9 @@ proxy-groups:
     strategy: consistent-hashing
     proxies:
       - fastssh-nl
-      - sshocean-usa
       - fastssh-sg
+      - sshocean-usa
+      - sshocean-sg
 
 rules:
   - MATCH,sshkit-generator
