@@ -2,12 +2,13 @@ port: 7890
 socks-port: 7891
 redir-port: 7892
 mixed-port: 7893
-mode: rule
+mode: global
 log-level: silent
 allow-lan: true
 external-controller: 0.0.0.0:9090
 bind-address: "*"
 ipv6: false
+
 dns:
   enable: true
   ipv6: false
@@ -21,6 +22,7 @@ dns:
   nameserver:
     - https://42a755ec.d.adguard-dns.com/dns-query
     - tls://42a755ec.d.adguard-dns.com
+    - tls://42a755ec.d.adguard-dns.com:853
     - quic://42a755ec.d.adguard-dns.com
 
   fallback:
@@ -28,6 +30,7 @@ dns:
     - tcp://94.140.14.49
     - 94.140.14.49
     - 94.140.14.59
+
 tun:
   enable: true
   stack: system
