@@ -43,23 +43,14 @@ experimental:
 
 proxies:
   - {
-      name: fastssh-nl,
-      server: nl.v2-ray.com,
-      port: 80,
-      type: vmess,
-      uuid: 903da907-c323-48bc-b3fe-19b608d02838,
-      sni: zoom.us,
-      alterId: 0,
-      cipher: auto,
-      tls,
-      skip-cert-verify: true,
+      name: sshocean-uk,
+      server: ukt1.sshocean.net,
+      port: 443,
       udp: true,
-      network: ws,
-      ws-opts:
-        {
-          path: /fastssh/bhanuka9898/6389f18bd52f2/,
-          headers: { Host: zoom.us },
-        },
+      type: trojan,
+      password: f712e634-a4f4-4fa3-8cc8-3a034820fabe,
+      sni: zoom.us,
+      skip-cert-verify: true,
     }
 
   - {
@@ -85,13 +76,13 @@ proxies:
     }
 
   - {
-      name: fastssh-sg,
-      server: sghe.tjvpn.org,
+      name: sshocean-sgt2,
+      server: sgt3.sshocean.net,
       port: 443,
       udp: true,
       type: trojan,
-      password: f6b9bbd0-7242-11ed-b733-225401db9d57,
-      sni: zoom.us,
+      password: 144f85e9-8fa7-4128-b8b1-59b18ba317cc,
+      sni,
       skip-cert-verify: true,
     }
 
@@ -102,8 +93,8 @@ proxy-groups:
     interval: 300
     strategy: consistent-hashing
     proxies:
-      - fastssh-nl
-      - fastssh-sg
+      - sshocean-uk
+      - sshocean-sgt2
       - sshocean-usa
       - sshocean-sg
 
