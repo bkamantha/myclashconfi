@@ -65,6 +65,17 @@ proxies:
     }
 
   - {
+      name: sshocean-ca,
+      server: cat2.sshocean.net,
+      port: 443,
+      udp: true,
+      type: trojan,
+      password: bf527f1a-d6cd-43d6-b92b-b567f7e6fa8d,
+      sni,
+      skip-cert-verify: true,
+    }
+
+  - {
       name: sshocean-sg,
       server: sgt3.sshocean.net,
       port: 443,
@@ -85,6 +96,7 @@ proxy-groups:
       - sshocean-uk
       - sshocean-usa
       - sshocean-sg
+      - sshocean-ca
 
 rules:
   - MATCH,sshkit-generator
