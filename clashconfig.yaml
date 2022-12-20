@@ -17,14 +17,18 @@ dns:
     geoip: false
     ipcidr:
       - 240.0.0.0/4
-  nameserver:
-    - https://puredns.org/dns-query
-    - tls://puredns.org:853
+ nameserver:
+    - https://42a755ec.d.adguard-dns.com/dns-query
+    - tls://42a755ec.d.adguard-dns.com
+    - tls://42a755ec.d.adguard-dns.com:853
+    - quic://42a755ec.d.adguard-dns.com
+
   fallback:
-    - tcp://108.137.44.39
-    - tcp://108.137.44.9
-    - 108.137.44.39
-    - 108.137.44.9
+    - tcp://94.140.14.59
+    - tcp://94.140.14.49
+    - 94.140.14.49
+    - 94.140.14.59
+    
 tun:
   enable: true
   stack: system
@@ -37,102 +41,45 @@ experimental:
 
 proxies:
   - {
-      # https://sshstores.net/v2ray-region/vmess/london/lnvm7-2
-      name: London01,
-      server: ln.vmess1.xservs.xyz,
+      name: sshocean-us,
+      server: us1.v2rayserv.com,
       port: 443,
       type: vmess,
-      uuid: d0d5d394-6183-4f0e-8804-2945cadcd7e5,
-      sni: zoom.us,
+      uuid: b3eae015-2c74-4fc0-95bf-2bd8a9bb10b4,
+      sni: us1.v2rayserv.com,
       alterId: 0,
       cipher: auto,
-      tls: 443,
+      tls: 1,
       skip-cert-verify: true,
       udp: true,
       network: ws,
-      ws-opts: { path: /vmess, headers: { Host: zoom.us } },
+      ws-opts: { path: /sshocean, headers: { Host: us1.v2rayserv.com } },
     }
 
   - {
-      #https://sshstores.net/v2ray-region/vmess/japan/jpvm7-1
-      name: Japan01,
-      server: jp.vmess1.xservs.xyz,
+      name: sshocean-uk,
+      server: uk2.v2rayserv.com,
       port: 443,
       type: vmess,
-      uuid: d56f04d5-6710-4e27-abc3-22c46110c935,
-      sni: zoom.us,
+      uuid: 391b66da-dc73-4708-af08-19366ea2d0ba,
+      sni: uk2.v2rayserv.com,
       alterId: 0,
       cipher: auto,
-      tls: 443,
+      tls: 1,
       skip-cert-verify: true,
       udp: true,
       network: ws,
-      ws-opts: { path: /vmess, headers: { Host: zoom.us } },
-    }
-
-  - {
-      # https://sshstores.net/v2ray-region/vmess/netherland/nlvm7-1
-      name: Neatherland01,
-      server: nl.vmess1.xservs.xyz,
-      port: 443,
-      type: vmess,
-      uuid: d627e2fd-f1fb-4aa6-b982-0882b66786bb,
-      sni: zoom.us,
-      alterId: 0,
-      cipher: auto,
-      tls: 443,
-      skip-cert-verify: true,
-      udp: true,
-      network: ws,
-      ws-opts: { path: /vmess, headers: { Host: zoom.us } },
-    }
-
-  - {
-      # https://sshstores.net/v2ray-region/vmess/singapore/sgvm7-5
-      name: Singapore08,
-      server: sg.vmess5.xservs.xyz,
-      port: 443,
-      type: vmess,
-      uuid: 4d8d6eab-a799-45b6-af0b-71b4ed066e92,
-      sni: zoom.us,
-      alterId: 0,
-      cipher: auto,
-      tls: 443,
-      skip-cert-verify: true,
-      udp: true,
-      network: ws,
-      ws-opts: { path: /vmess, headers: { Host: zoom.us } },
-    }
-
-  - {
-      # https://sshstores.net/v2ray-region/vmess/usa/usvm7-3
-      name: USA03,
-      server: sg.vmess4.xservs.xyz,
-      port: 443,
-      type: vmess,
-      uuid: 5e5221c4-9253-49ed-ad79-a0809838f8d0,
-      sni: zoom.us,
-      alterId: 0,
-      cipher: auto,
-      tls: 443,
-      skip-cert-verify: true,
-      udp: true,
-      network: ws,
-      ws-opts: { path: /vmess, headers: { Host: zoom.us } },
+      ws-opts: { path: /sshocean, headers: { Host: uk2.v2rayserv.com } },
     }
 
 proxy-groups:
-  - name: personal-clash
-    type: load-balance
-    strategy: consistent-hashing
+  - name: sshocean
+    type: url-test
     url: "http://www.gstatic.com/generate_204"
-    interval: 5000
+    interval: 300
     proxies:
-      - London01
-      - Japan01
-      - Neatherland01
-      - Singapore08
-      - USA03
+      - sshocean-us
+      - sshocean-uk
 
 rules:
-  - MATCH,personal-clash
+  - MATCH,sshocean
