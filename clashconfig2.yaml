@@ -44,11 +44,11 @@ experimental:
 proxies:
   - {
       name: sshocean-uk,
-      server: ukt1.sshocean.net,
+      server: ukt3.sshocean.net,
       port: 443,
       udp: true,
       type: trojan,
-      password: f712e634-a4f4-4fa3-8cc8-3a034820fabe,
+      password: 6b1af126-8757-41e0-9404-58aeadabe8b9,
       sni: zoom.us,
       skip-cert-verify: true,
     }
@@ -59,7 +59,7 @@ proxies:
       port: 443,
       udp: true,
       type: trojan,
-      password: 0b3b9d3e-deb5-4e5b-b3bb-f63d7a101bea,
+      password: 7672f305-c2fe-4417-b5ee-d2b28782dec2,
       sni: zoom.us,
       skip-cert-verify: true,
     }
@@ -75,17 +75,6 @@ proxies:
       skip-cert-verify: true,
     }
 
-  - {
-      name: sshocean-sgt2,
-      server: sgt3.sshocean.net,
-      port: 443,
-      udp: true,
-      type: trojan,
-      password: 144f85e9-8fa7-4128-b8b1-59b18ba317cc,
-      sni,
-      skip-cert-verify: true,
-    }
-
 proxy-groups:
   - name: sshkit-generator
     type: load-balance
@@ -94,7 +83,6 @@ proxy-groups:
     strategy: consistent-hashing
     proxies:
       - sshocean-uk
-      - sshocean-sgt2
       - sshocean-usa
       - sshocean-sg
 
