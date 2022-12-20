@@ -51,7 +51,7 @@ proxies:
       port: 443,
       type: vmess,
       uuid: b3eae015-2c74-4fc0-95bf-2bd8a9bb10b4,
-      sni: us1.v2rayserv.com,
+      sni: zoom.us
       alterId: 0,
       cipher: auto,
       tls: 1,
@@ -67,7 +67,7 @@ proxies:
       port: 443,
       type: vmess,
       uuid: 391b66da-dc73-4708-af08-19366ea2d0ba,
-      sni: uk2.v2rayserv.com,
+      sni: zoom.us,
       alterId: 0,
       cipher: auto,
       tls: 1,
@@ -75,6 +75,22 @@ proxies:
       udp: true,
       network: ws,
       ws-opts: { path: /sshocean, headers: { Host: uk2.v2rayserv.com } },
+    }
+
+  - {
+      name: sshocean-sg,
+      server: sg3.v2rayserv.com,
+      port: 443,
+      type: vmess,
+      uuid: e28d1119-2489-4084-876a-133dcd6a684e,
+      sni: zoom.us,      
+      alterId: 0,
+      cipher: auto,
+      tls: 1,
+      skip-cert-verify: true,
+      udp: true,
+      network: ws,
+      ws-opts: { path: /sshocean, headers: { Host: sg3.v2rayserv.com } },
     }
 
 proxy-groups:
@@ -85,6 +101,7 @@ proxy-groups:
     proxies:
       - sshocean-us
       - sshocean-uk
+      - sshocean-sg
 
 rules:
   - MATCH,sshocean
