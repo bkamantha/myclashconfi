@@ -17,19 +17,23 @@ dns:
     geoip: false
     ipcidr:
       - 240.0.0.0/4
-
   nameserver:
+    - https://puredns.org/dns-query
+    - tls://puredns.org:853
     - https://42a755ec.d.adguard-dns.com/dns-query
     - tls://42a755ec.d.adguard-dns.com
     - tls://42a755ec.d.adguard-dns.com:853
     - quic://42a755ec.d.adguard-dns.com
 
   fallback:
+    - tcp://108.137.44.39
+    - tcp://108.137.44.9
+    - 108.137.44.39
+    - 108.137.44.9
     - tcp://94.140.14.59
     - tcp://94.140.14.49
     - 94.140.14.49
     - 94.140.14.59
-
 tun:
   enable: true
   stack: system
