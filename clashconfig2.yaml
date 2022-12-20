@@ -71,7 +71,7 @@ proxies:
       udp: true,
       type: trojan,
       password: bf527f1a-d6cd-43d6-b92b-b567f7e6fa8d,
-      sni,
+      sni: zoom.us,
       skip-cert-verify: true,
     }
 
